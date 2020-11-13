@@ -156,7 +156,7 @@
                   "cost": 1000,
                   "feature_unlocks": [
                     "<b>Building</b>: Mineral Purification Plants",
-                    "<b>Edict</b>: Production Targets"
+                    "<b>Edict</b>: Mining Subsidies"
                   ],
                   "is_dangerous": false,
                   "is_rare": false,
@@ -361,8 +361,8 @@
                           "name": "Cross-Model Standardization",
                           "description": "Improved production practices allow for greater alterations to synthetic workers without compromising core functionality.",
                           "area": "engineering",
-                          "base_factor": 1.0,
-                          "base_weight": 65.0,
+                          "base_factor": 2.0,
+                          "base_weight": 130.0,
                           "category": "Industry",
                           "cost": 4000,
                           "feature_unlocks": [
@@ -388,7 +388,6 @@
                           ],
                           "weight_modifiers": [
                             "(×<b style='color:red'>0.0</b>) Has policy Robotic Workers Outlawed",
-                            "(×<b style='color:lime'>2.0</b>) Has Government Civic: Mechanist",
                             "(×<b style='color:lime'>1.25</b>) Research Leader (Engineering): <br/>    •   Is Industry Expert<br/>    •   Skill level is greater than 2"
                           ],
                           "potential": [
@@ -400,8 +399,8 @@
                               "name": "Fungible Circuitry",
                               "description": "Improved production practices allow for fundamental changes to synthetic workers without compromising core functionality.",
                               "area": "engineering",
-                              "base_factor": 0.5,
-                              "base_weight": 22.5,
+                              "base_factor": 2.0,
+                              "base_weight": 90.0,
                               "category": "Industry",
                               "cost": 8000,
                               "feature_unlocks": [
@@ -427,7 +426,6 @@
                               ],
                               "weight_modifiers": [
                                 "(×<b style='color:red'>0.0</b>) Has policy Robotic Workers Outlawed",
-                                "(×<b style='color:lime'>2.0</b>) Has Government Civic: Mechanist",
                                 "(×<b style='color:lime'>4.0</b>) Has The Flesh is Weak Ascension Perk",
                                 "(×<b style='color:lime'>1.5</b>) Has Technological Ascendancy Ascension Perk",
                                 "(×<b style='color:red'>0.5</b>) All must be false<br/>    •   Research Leader (Engineering): <br/>\t    •   Is Maniacal<br/>    •   Research Leader (Engineering): <br/>\t    •   Is Spark of Genius<br/>    •   Research Leader (Engineering): <br/>\t    •   Is Curator<br/>    •   Research Leader (Engineering): <br/>\t    •   Is Industry Expert"
@@ -455,8 +453,8 @@
                       "name": "Droids",
                       "description": "Upgraded robotic workers, these units have an expanded movement range equal to that of most organics. Their neural processors have also been greatly improved.",
                       "area": "engineering",
-                      "base_factor": 1.0,
-                      "base_weight": 70.0,
+                      "base_factor": 2.0,
+                      "base_weight": 140.0,
                       "category": "Industry",
                       "cost": 2500,
                       "feature_unlocks": [
@@ -485,7 +483,6 @@
                         "(×<b style='color:red'>0.0</b>) Has policy Robotic Workers Outlawed",
                         "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Spiritualist Ethic<br/>    •   Has Fanatic Spiritualist Ethic",
                         "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Materialist Ethic<br/>    •   Has Fanatic Materialist Ethic",
-                        "(×<b style='color:lime'>2.0</b>) Has Government Civic: Mechanist",
                         "(×<b style='color:lime'>1.25</b>) Research Leader (Engineering): <br/>    •   Is Industry Expert<br/>    •   Skill level is greater than 2"
                       ],
                       "potential": [
@@ -497,8 +494,8 @@
                           "name": "Synthetics",
                           "description": "Highly advanced robots that are stronger, faster and more durable than the vast majority of organics. With their upgraded neural processors they are fully capable of independent operations.",
                           "area": "engineering",
-                          "base_factor": 0.5,
-                          "base_weight": 20.0,
+                          "base_factor": 2.0,
+                          "base_weight": 80.0,
                           "category": "Industry",
                           "cost": 10000,
                           "feature_unlocks": [
@@ -533,7 +530,6 @@
                             "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Spiritualist Ethic<br/>    •   Has Fanatic Spiritualist Ethic",
                             "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Materialist Ethic<br/>    •   Has Fanatic Materialist Ethic",
                             "(×<b style='color:lime'>1.5</b>) Has Technological Ascendancy Ascension Perk",
-                            "(×<b style='color:lime'>2.0</b>) Has Government Civic: Mechanist",
                             "(×<b style='color:lime'>4.0</b>) Has The Flesh is Weak Ascension Perk",
                             "(×<b style='color:red'>0.2</b>) All must be false<br/>    •   Research Leader (Engineering): <br/>\t    •   Is Maniacal<br/>    •   Research Leader (Engineering): <br/>\t    •   Is Spark of Genius<br/>    •   Research Leader (Engineering): <br/>\t    •   Is Curator<br/>    •   Research Leader (Engineering): <br/>\t    •   Is Industry Expert"
                           ],
@@ -569,7 +565,8 @@
                               "weight_modifiers": [
                                 "(×<b style='color:red'>0.0</b>) Has policy Robotic Workers Outlawed",
                                 "(×<b style='color:red'>0.0</b>) Has policy AI Outlawed",
-                                "(×<b style='color:lime'>1.25</b>) Research Leader (Engineering): <br/>    •   Is Industry Expert<br/>    •   Skill level is greater than 3"
+                                "(×<b style='color:lime'>1.25</b>) Research Leader (Engineering): <br/>    •   Is Industry Expert<br/>    •   Skill level is greater than 3",
+                                "(×<b style='color:red'>0.33</b>) Is Necrophage"
                               ],
                               "potential": [
                                 "Does NOT have Gestalt Consciousness Ethic"
@@ -669,12 +666,55 @@
                           "name": "Nanite Assemblers",
                           "description": "Using programmable nanites to assist in the construction of new robotic units will allow for more advanced models that are equipped with an even greater array of subsystems.",
                           "area": "engineering",
-                          "base_factor": 0.5,
-                          "base_weight": 22.5,
+                          "base_factor": 2.0,
+                          "base_weight": 90.0,
                           "category": "Industry",
                           "cost": 8000,
                           "feature_unlocks": [
                             "Machine Modification Points +1"
+                          ],
+                          "is_dangerous": false,
+                          "is_rare": true,
+                          "is_start_tech": false,
+                          "prerequisites": [
+                            "tech_binary_motivators",
+                            "tech_galactic_administration"
+                          ],
+                          "tier": 4,
+                          "prerequisites_names": [
+                            {
+                              "name": "Binary Motivators",
+                              "key": "tech_binary_motivators"
+                            },
+                            {
+                              "name": "Galactic Administration",
+                              "key": "tech_galactic_administration"
+                            }
+                          ],
+                          "weight_modifiers": [
+                            "(×<b style='color:red'>0.2</b>) All must be false<br/>    •   Research Leader (Engineering): <br/>\t    •   Is Maniacal<br/>    •   Research Leader (Engineering): <br/>\t    •   Is Spark of Genius<br/>    •   Research Leader (Engineering): <br/>\t    •   Is Curator<br/>    •   Research Leader (Engineering): <br/>\t    •   Is Industry Expert",
+                            "(×<b style='color:lime'>1.5</b>) Has Technological Ascendancy Ascension Perk",
+                            "(×<b style='color:lime'>1.25</b>) Research Leader (Engineering): <br/>    •   Is Industry Expert"
+                          ],
+                          "potential": [
+                            "Has Machine Intelligence Authority"
+                          ],
+                          "children": [],
+                          "is_event": false,
+                          "is_machine_empire": true,
+                          "source": "vanilla"
+                        },
+                        {
+                          "key": "tech_mega_assembly",
+                          "name": "Mega-Assembly Systems",
+                          "description": "Advanced templates allow us to drastically increase the assembly of new units.",
+                          "area": "engineering",
+                          "base_factor": 2.0,
+                          "base_weight": 90.0,
+                          "category": "Industry",
+                          "cost": 8000,
+                          "feature_unlocks": [
+                            "<b>Building</b>: Machine Assembly Complex"
                           ],
                           "is_dangerous": false,
                           "is_rare": true,
@@ -899,7 +939,7 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   Has deposit Bubbling Swamp<br/>\t\t    •   Has deposit Fuming Bog<br/>    •   Any Planet within borders<br/>\t    •   One must be true<br/>\t\t    •   Has deposit £exotic_gases£ +1<br/>\t\t    •   Has deposit £exotic_gases£ +2<br/>\t\t    •   Has deposit £exotic_gases£ +3<br/>\t\t    •   Has deposit £exotic_gases£ +4<br/>\t\t    •   Has deposit £exotic_gases£ +5",
+                "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   Has deposit Bubbling Swamp<br/>\t\t    •   Has deposit Fuming Bog<br/>\t\t    •   Has deposit Industrial Sector<br/>    •   Any Planet within borders<br/>\t    •   One must be true<br/>\t\t    •   Has deposit £exotic_gases£ +1<br/>\t\t    •   Has deposit £exotic_gases£ +2<br/>\t\t    •   Has deposit £exotic_gases£ +3<br/>\t\t    •   Has deposit £exotic_gases£ +4<br/>\t\t    •   Has deposit £exotic_gases£ +5",
                 "(×<b style='color:lime'>1.25</b>) Research Leader (Engineering): <br/>    •   Is Materials Expert"
               ],
               "potential": [],
@@ -917,7 +957,7 @@
               "category": "Materials",
               "cost": 1500,
               "feature_unlocks": [
-                "<b>Building</b>: Lithoid Crystal Plant",
+                "<b>Building</b>: Kha'lanka Crystal Plant",
                 "<b>Building</b>: Synthetic Crystal Plants"
               ],
               "is_dangerous": false,
@@ -934,7 +974,7 @@
                 }
               ],
               "weight_modifiers": [
-                "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   Has deposit Crystalline Caverns<br/>\t\t    •   Has deposit Crystal Forest<br/>\t\t    •   Has deposit Crystal Reef<br/>    •   Any Planet within borders<br/>\t    •   One must be true<br/>\t\t    •   Has deposit £rare_crystals£ +1<br/>\t\t    •   Has deposit £rare_crystals£ +2<br/>\t\t    •   Has deposit £rare_crystals£ +3<br/>\t\t    •   Has deposit £rare_crystals£ +4<br/>\t\t    •   Has deposit £rare_crystals£ +5",
+                "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   Has deposit Crystalline Caverns<br/>\t\t    •   Has deposit Crystal Forest<br/>\t\t    •   Has deposit Crystal Reef<br/>\t\t    •   Has deposit Industrial Sector<br/>    •   Any Planet within borders<br/>\t    •   One must be true<br/>\t\t    •   Has deposit £rare_crystals£ +1<br/>\t\t    •   Has deposit £rare_crystals£ +2<br/>\t\t    •   Has deposit £rare_crystals£ +3<br/>\t\t    •   Has deposit £rare_crystals£ +4<br/>\t\t    •   Has deposit £rare_crystals£ +5",
                 "(×<b style='color:lime'>1.25</b>) Research Leader (Engineering): <br/>    •   Is Materials Expert"
               ],
               "potential": [],
@@ -1201,7 +1241,7 @@
               ],
               "weight_modifiers": [
                 "(×<b style='color:lime'>1.25</b>) Research Leader (Engineering): <br/>    •   Is Materials Expert",
-                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   Has deposit Bubbling Swamp<br/>\t\t    •   Has deposit Fuming Bog<br/>    •   Any Planet within borders<br/>\t    •   One must be true<br/>\t\t    •   Has deposit £exotic_gases£ +1<br/>\t\t    •   Has deposit £exotic_gases£ +2<br/>\t\t    •   Has deposit £exotic_gases£ +3<br/>\t\t    •   Has deposit £exotic_gases£ +4<br/>\t\t    •   Has deposit £exotic_gases£ +5"
+                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   Has deposit Bubbling Swamp<br/>\t\t    •   Has deposit Fuming Bog<br/>\t\t    •   Has deposit Industrial Sector<br/>    •   Any Planet within borders<br/>\t    •   One must be true<br/>\t\t    •   Has deposit £exotic_gases£ +1<br/>\t\t    •   Has deposit £exotic_gases£ +2<br/>\t\t    •   Has deposit £exotic_gases£ +3<br/>\t\t    •   Has deposit £exotic_gases£ +4<br/>\t\t    •   Has deposit £exotic_gases£ +5"
               ],
               "potential": [],
               "children": [],
@@ -1236,7 +1276,7 @@
               ],
               "weight_modifiers": [
                 "(×<b style='color:lime'>2.0</b>) Research Leader (Engineering): <br/>    •   Is Materials Expert",
-                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   Has deposit Crystalline Caverns<br/>\t\t    •   Has deposit Crystal Forest<br/>\t\t    •   Has deposit Crystal Reef<br/>    •   Any Planet within borders<br/>\t    •   One must be true<br/>\t\t    •   Has deposit £rare_crystals£ +1<br/>\t\t    •   Has deposit £rare_crystals£ +2<br/>\t\t    •   Has deposit £rare_crystals£ +3<br/>\t\t    •   Has deposit £rare_crystals£ +4<br/>\t\t    •   Has deposit £rare_crystals£ +5"
+                "(×<b style='color:red'>0.0</b>) All must be false<br/>    •   Any Owned Planet<br/>\t    •   One must be true<br/>\t\t    •   Has deposit Crystalline Caverns<br/>\t\t    •   Has deposit Crystal Forest<br/>\t\t    •   Has deposit Crystal Reef<br/>\t\t    •   Has deposit Industrial Sector<br/>    •   Any Planet within borders<br/>\t    •   One must be true<br/>\t\t    •   Has deposit £rare_crystals£ +1<br/>\t\t    •   Has deposit £rare_crystals£ +2<br/>\t\t    •   Has deposit £rare_crystals£ +3<br/>\t\t    •   Has deposit £rare_crystals£ +4<br/>\t\t    •   Has deposit £rare_crystals£ +5"
               ],
               "potential": [],
               "children": [],
@@ -1317,7 +1357,7 @@
               "category": "Industry",
               "cost": 1000,
               "feature_unlocks": [
-                "Planet Build Speed +25%"
+                "Planetary Build Speed +25%"
               ],
               "is_dangerous": false,
               "is_rare": false,
@@ -1343,12 +1383,13 @@
                   "name": "Construction Templates",
                   "description": "Standardized pre-fab templates massively reduce on-site facility construction times.",
                   "area": "engineering",
-                  "base_factor": 0.5,
-                  "base_weight": 30.0,
+                  "base_factor": 2.0,
+                  "base_weight": 120.0,
                   "category": "Industry",
                   "cost": 5000,
                   "feature_unlocks": [
-                    "Planet Build Speed +50%"
+                    "Empire Sprawl from Districts -10%",
+                    "Planetary Build Speed +50%"
                   ],
                   "is_dangerous": false,
                   "is_rare": true,
@@ -1380,7 +1421,7 @@
                       "category": "Industry",
                       "cost": 50000,
                       "feature_unlocks": [
-                        "Planet Build Speed +10%"
+                        "Planetary Build Speed +10%"
                       ],
                       "is_dangerous": false,
                       "is_rare": false,
@@ -1711,6 +1752,88 @@
               ],
               "potential": [],
               "children": [
+                {
+                  "key": "tech_advanced_metallurgy_1",
+                  "name": "Ceramo-Metal Alloys",
+                  "description": "The widespread use of advanced ceramics in industry can improve metallurgical yields.",
+                  "area": "engineering",
+                  "base_factor": 2.0,
+                  "base_weight": 170.0,
+                  "category": "Materials",
+                  "cost": 1500,
+                  "feature_unlocks": [
+                    "£job_foundry£ Metallurgists Output +10%"
+                  ],
+                  "is_dangerous": false,
+                  "is_rare": false,
+                  "is_start_tech": false,
+                  "prerequisites": [
+                    "tech_ship_armor_2",
+                    "tech_alloys_1"
+                  ],
+                  "tier": 2,
+                  "prerequisites_names": [
+                    {
+                      "name": "Holographic Casts",
+                      "key": "tech_alloys_1"
+                    },
+                    {
+                      "name": "Ceramo-Metal Materials",
+                      "key": "tech_ship_armor_2"
+                    }
+                  ],
+                  "weight_modifiers": [
+                    "(×<b style='color:lime'>1.25</b>) Research Leader (Engineering): <br/>    •   Is Materials Expert"
+                  ],
+                  "potential": [],
+                  "children": [
+                    {
+                      "key": "tech_advanced_metallurgy_2",
+                      "name": "Durasteel-Laced Alloys",
+                      "description": "By replacing antiquated ceramo-metal equipment with cutting edge technology, we can run our forges hotter and longer, increasing production.",
+                      "area": "engineering",
+                      "base_factor": 2.0,
+                      "base_weight": 90.0,
+                      "category": "Materials",
+                      "cost": 8000,
+                      "feature_unlocks": [
+                        "£job_foundry£ Metallurgists Output +10%"
+                      ],
+                      "is_dangerous": false,
+                      "is_rare": false,
+                      "is_start_tech": false,
+                      "prerequisites": [
+                        "tech_advanced_metallurgy_1",
+                        "tech_alloys_2",
+                        "tech_ship_armor_4"
+                      ],
+                      "tier": 4,
+                      "prerequisites_names": [
+                        {
+                          "name": "Ceramo-Metal Alloys",
+                          "key": "tech_advanced_metallurgy_1"
+                        },
+                        {
+                          "name": "Nano-Separators",
+                          "key": "tech_alloys_2"
+                        },
+                        {
+                          "name": "Durasteel Materials",
+                          "key": "tech_ship_armor_4"
+                        }
+                      ],
+                      "weight_modifiers": [
+                        "(×<b style='color:lime'>1.25</b>) Research Leader (Engineering): <br/>    •   Is Materials Expert"
+                      ],
+                      "potential": [],
+                      "children": [],
+                      "is_event": false,
+                      "source": "vanilla"
+                    }
+                  ],
+                  "is_event": false,
+                  "source": "vanilla"
+                },
                 {
                   "key": "tech_ship_armor_3",
                   "name": "Plasteel Materials",
@@ -3338,8 +3461,8 @@
                   "name": "Improved Structural Integrity",
                   "description": "A reinforced framework and blast shields with enhanced impact absorption will ensure the structural integrity of the platform even under immense pressure.",
                   "area": "engineering",
-                  "base_factor": 0.5,
-                  "base_weight": 37.5,
+                  "base_factor": 2.0,
+                  "base_weight": 150.0,
                   "category": "Voidcraft",
                   "cost": 2000,
                   "feature_unlocks": [
@@ -3435,8 +3558,8 @@
                   "name": "Modular Engineering",
                   "description": "Streamlined starbase construction procedures, using modular designs, will reduce the present build cost and time.",
                   "area": "engineering",
-                  "base_factor": 0.5,
-                  "base_weight": 35.0,
+                  "base_factor": 2.0,
+                  "base_weight": 140.0,
                   "category": "Voidcraft",
                   "cost": 2500,
                   "feature_unlocks": [
@@ -3468,8 +3591,8 @@
                       "name": "Corps of Engineers",
                       "description": "The creation of a dedicated naval engineering corps will greatly benefit the construction of deep space defense platforms, decreasing building costs and increasing durability.",
                       "area": "engineering",
-                      "base_factor": 0.5,
-                      "base_weight": 25.0,
+                      "base_factor": 2.0,
+                      "base_weight": 100.0,
                       "category": "Voidcraft",
                       "cost": 6000,
                       "feature_unlocks": [
@@ -3546,47 +3669,6 @@
                   "potential": [],
                   "children": [
                     {
-                      "key": "tech_habitat_1",
-                      "name": "Orbital Habitats",
-                      "description": "Allows the construction of largely self-sustaining Orbital Habitats.",
-                      "area": "engineering",
-                      "base_factor": 1.0,
-                      "base_weight": 60.0,
-                      "category": "Voidcraft",
-                      "cost": 5000,
-                      "feature_unlocks": [],
-                      "is_dangerous": false,
-                      "is_rare": false,
-                      "is_start_tech": false,
-                      "prerequisites": [
-                        "tech_starbase_4"
-                      ],
-                      "tier": 3,
-                      "prerequisites_names": [
-                        {
-                          "name": "Star Fortress",
-                          "key": "tech_starbase_4"
-                        }
-                      ],
-                      "weight_modifiers": [
-                        "(×<b style='color:red'>0.1</b>) NOT Number of years since game start is greater than 50",
-                        "(×<b style='color:lime'>10.0</b>) Any Neighbor Country<br/>    •   Has Technology: Orbital Habitats",
-                        "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 60",
-                        "(×<b style='color:lime'>3.0</b>) Number of years since game start is greater than 65",
-                        "(×<b style='color:lime'>4.0</b>) Number of years since game start is greater than 70",
-                        "(×<b style='color:lime'>5.0</b>) Number of Starhold is greater than or equal to 3",
-                        "(×<b style='color:lime'>1.25</b>) Has Expansion Traditions Tradition",
-                        "(×<b style='color:lime'>1.25</b>) Has Expansion Traditions Finished Tradition",
-                        "(×<b style='color:lime'>1.25</b>) Research Leader (Engineering): <br/>    •   Is Voidcraft Expert"
-                      ],
-                      "potential": [
-                        "Has DLC Utopia"
-                      ],
-                      "children": [],
-                      "is_event": false,
-                      "source": "vanilla"
-                    },
-                    {
                       "key": "tech_starbase_5",
                       "name": "Citadel",
                       "description": "Plans for an immense battlestation capable of holding its own against several strike fleets are now being drawn up. If realized, these citadels will become monuments to greatness as much as system hubs.",
@@ -3623,6 +3705,127 @@
                       ],
                       "potential": [],
                       "children": [],
+                      "is_event": false,
+                      "source": "vanilla"
+                    }
+                  ],
+                  "is_event": false,
+                  "source": "vanilla"
+                },
+                {
+                  "key": "tech_habitat_1",
+                  "name": "Orbital Habitats",
+                  "description": "Allows the construction of largely self-sustaining Orbital Habitats.",
+                  "area": "engineering",
+                  "base_factor": 1.0,
+                  "base_weight": 60.0,
+                  "category": "Voidcraft",
+                  "cost": 5000,
+                  "feature_unlocks": [],
+                  "is_dangerous": false,
+                  "is_rare": false,
+                  "is_start_tech": false,
+                  "prerequisites": [
+                    "tech_starbase_3"
+                  ],
+                  "tier": 3,
+                  "prerequisites_names": [
+                    {
+                      "name": "Starhold",
+                      "key": "tech_starbase_3"
+                    }
+                  ],
+                  "weight_modifiers": [
+                    "(×<b style='color:red'>0.1</b>) NOT Number of years since game start is greater than 50",
+                    "(×<b style='color:lime'>10.0</b>) Any Neighbor Country<br/>    •   Has Technology: Orbital Habitats",
+                    "(×<b style='color:lime'>2.0</b>) Number of years since game start is greater than 60",
+                    "(×<b style='color:lime'>3.0</b>) Number of years since game start is greater than 65",
+                    "(×<b style='color:lime'>4.0</b>) Number of years since game start is greater than 70",
+                    "(×<b style='color:lime'>5.0</b>) Number of Starhold is greater than or equal to 3",
+                    "(×<b style='color:lime'>1.25</b>) Has Expansion Traditions Tradition",
+                    "(×<b style='color:lime'>1.25</b>) Has Expansion Traditions Finished Tradition",
+                    "(×<b style='color:lime'>1.25</b>) Research Leader (Engineering): <br/>    •   Is Voidcraft Expert"
+                  ],
+                  "potential": [
+                    "One must be true\n    •   has_origin=origin_void_dwellers\n    •   Has DLC Utopia"
+                  ],
+                  "children": [
+                    {
+                      "key": "tech_habitat_2",
+                      "name": "Habitat Expansion",
+                      "description": "Our early habitats were primitive things compared to the efficient designs we can now develop.",
+                      "area": "engineering",
+                      "base_factor": 10.0,
+                      "base_weight": 350.0,
+                      "category": "Voidcraft",
+                      "cost": 10000,
+                      "feature_unlocks": [],
+                      "is_dangerous": false,
+                      "is_rare": true,
+                      "is_start_tech": false,
+                      "prerequisites": [
+                        "tech_habitat_1",
+                        "tech_starbase_4"
+                      ],
+                      "tier": 4,
+                      "prerequisites_names": [
+                        {
+                          "name": "Orbital Habitats",
+                          "key": "tech_habitat_1"
+                        },
+                        {
+                          "name": "Star Fortress",
+                          "key": "tech_starbase_4"
+                        }
+                      ],
+                      "weight_modifiers": [
+                        "(×<b style='color:red'>0.0</b>) No Owned Planet<br/>    •   Is Orbital Habitat",
+                        "(×<b style='color:lime'>1.25</b>) Research Leader (Engineering): <br/>    •   Is Voidcraft Expert"
+                      ],
+                      "potential": [
+                        "One must be true\n    •   has_origin=origin_void_dwellers\n    •   Has DLC Utopia"
+                      ],
+                      "children": [
+                        {
+                          "key": "tech_habitat_3",
+                          "name": "Advanced Space Habitation",
+                          "description": "Years of improvements to our Orbital Habitats have led us to create newer more effective designs.",
+                          "area": "engineering",
+                          "base_factor": 10.0,
+                          "base_weight": 350.0,
+                          "category": "Voidcraft",
+                          "cost": 17500,
+                          "feature_unlocks": [],
+                          "is_dangerous": false,
+                          "is_rare": true,
+                          "is_start_tech": false,
+                          "prerequisites": [
+                            "tech_habitat_2",
+                            "tech_starbase_5"
+                          ],
+                          "tier": 4,
+                          "prerequisites_names": [
+                            {
+                              "name": "Habitat Expansion",
+                              "key": "tech_habitat_2"
+                            },
+                            {
+                              "name": "Citadel",
+                              "key": "tech_starbase_5"
+                            }
+                          ],
+                          "weight_modifiers": [
+                            "(×<b style='color:red'>0.0</b>) No Owned Planet<br/>    •   Is Orbital Habitat",
+                            "(×<b style='color:lime'>1.25</b>) Research Leader (Engineering): <br/>    •   Is Voidcraft Expert"
+                          ],
+                          "potential": [
+                            "One must be true\n    •   has_origin=origin_void_dwellers\n    •   Has DLC Utopia"
+                          ],
+                          "children": [],
+                          "is_event": false,
+                          "source": "vanilla"
+                        }
+                      ],
                       "is_event": false,
                       "source": "vanilla"
                     }
@@ -3732,8 +3935,8 @@
                       "name": "Advanced Destroyer Hulls",
                       "description": "The latest generation of destroyer hulls have optimized structural integrity fields and improved bulkheads.",
                       "area": "engineering",
-                      "base_factor": 1.0,
-                      "base_weight": 65.0,
+                      "base_factor": 2.0,
+                      "base_weight": 130.0,
                       "category": "Voidcraft",
                       "cost": 4000,
                       "feature_unlocks": [
@@ -3877,8 +4080,8 @@
                               "name": "Advanced Battleship Hulls",
                               "description": "The latest generation of battleship hulls have optimized structural integrity fields and improved bulkheads.",
                               "area": "engineering",
-                              "base_factor": 1.0,
-                              "base_weight": 30.0,
+                              "base_factor": 2.0,
+                              "base_weight": 60.0,
                               "category": "Voidcraft",
                               "cost": 15000,
                               "feature_unlocks": [
@@ -3959,8 +4162,8 @@
                               "name": "Improved Titan Hulls",
                               "description": "Advances in building techniques will allow for the construction of sturdier and more durable titans.",
                               "area": "engineering",
-                              "base_factor": 1.0,
-                              "base_weight": 25.0,
+                              "base_factor": 2.0,
+                              "base_weight": 50.0,
                               "category": "Voidcraft",
                               "cost": 17500,
                               "feature_unlocks": [
@@ -3992,8 +4195,8 @@
                                   "name": "Advanced Titan Hulls",
                                   "description": "The latest generation of titan hulls have optimized structural integrity fields and improved bulkheads.",
                                   "area": "engineering",
-                                  "base_factor": 1.0,
-                                  "base_weight": 20.0,
+                                  "base_factor": 2.0,
+                                  "base_weight": 40.0,
                                   "category": "Voidcraft",
                                   "cost": 20000,
                                   "feature_unlocks": [
@@ -4036,9 +4239,7 @@
                               "base_weight": 0.0,
                               "category": "Voidcraft",
                               "cost": 20000,
-                              "feature_unlocks": [
-                                "<b>Starbase Building</b>: Colossus Assembly Yards"
-                              ],
+                              "feature_unlocks": [],
                               "is_dangerous": false,
                               "is_rare": true,
                               "is_start_tech": false,
@@ -4062,8 +4263,8 @@
                                   "name": "Neutron Sweeping",
                                   "description": "An accelerated plume of neutron radiation \"paints\" the planet surface, severely degrading most materials and directly destroying biological tissue.",
                                   "area": "physics",
-                                  "base_factor": 0.5,
-                                  "base_weight": 10.0,
+                                  "base_factor": 2.0,
+                                  "base_weight": 40.0,
                                   "category": "Particles",
                                   "cost": 20000,
                                   "feature_unlocks": [
@@ -4102,8 +4303,8 @@
                                   "name": "Global Pacification",
                                   "description": "A shielding field is deployed around a planet, creating a barrier that is permanent and impenetrable (save for some wavelengths of light).",
                                   "area": "physics",
-                                  "base_factor": 0.5,
-                                  "base_weight": 10.0,
+                                  "base_factor": 2.0,
+                                  "base_weight": 40.0,
                                   "category": "Field Manipulation",
                                   "cost": 20000,
                                   "feature_unlocks": [
@@ -4140,8 +4341,8 @@
                                   "name": "Divine Stimulus",
                                   "description": "An arcane catalyst amplifying certain psionic wavelengths, capable of inducing hallucinations (religious experiences) in biological brains, and severe disruption (brain death) in electronic ones.",
                                   "area": "society",
-                                  "base_factor": 0.5,
-                                  "base_weight": 10.0,
+                                  "base_factor": 2.0,
+                                  "base_weight": 40.0,
                                   "category": "Psionics",
                                   "cost": 20000,
                                   "feature_unlocks": [
@@ -4179,8 +4380,8 @@
                                   "name": "Core Cracking",
                                   "description": "A directed feed of thermic energy superheats the atmosphere and agitates the planet's core, setting up disastrous tectonic events. A final and comparatively minute concussive blast is then delivered, cracking the planet open.",
                                   "area": "engineering",
-                                  "base_factor": 0.5,
-                                  "base_weight": 10.0,
+                                  "base_factor": 2.0,
+                                  "base_weight": 40.0,
                                   "category": "Voidcraft",
                                   "cost": 20000,
                                   "feature_unlocks": [
@@ -4217,8 +4418,8 @@
                                   "name": "Atmospheric Nanobot Dispersal",
                                   "description": "Nanobot Diffuser",
                                   "area": "engineering",
-                                  "base_factor": 0.5,
-                                  "base_weight": 10.0,
+                                  "base_factor": 2.0,
+                                  "base_weight": 40.0,
                                   "category": "Voidcraft",
                                   "cost": 20000,
                                   "feature_unlocks": [
@@ -4263,8 +4464,8 @@
                           "name": "Mega-Engineering",
                           "description": "To complete construction projects of truly staggering scales we must first achieve a fundamental understanding of both the engineering and resource storage requirements for such megastructures.",
                           "area": "engineering",
-                          "base_factor": 0.25,
-                          "base_weight": 5.0,
+                          "base_factor": 2.0,
+                          "base_weight": 40.0,
                           "category": "Voidcraft",
                           "cost": 20000,
                           "feature_unlocks": [
@@ -4320,8 +4521,8 @@
                               "name": "Science Nexus",
                               "description": "The research labs and databanks of a Science Nexus generate an immense flow of raw, undiluted science.",
                               "area": "physics",
-                              "base_factor": 0.25,
-                              "base_weight": 5.0,
+                              "base_factor": 2.0,
+                              "base_weight": 40.0,
                               "category": "Computing",
                               "cost": 20000,
                               "feature_unlocks": [
@@ -4351,7 +4552,9 @@
                                 "(×<b style='color:lime'>6.0</b>) Has Master Builders Ascension Perk",
                                 "(×<b style='color:lime'>9.0</b>) Has Technological Ascendancy Ascension Perk"
                               ],
-                              "potential": [],
+                              "potential": [
+                                "Has DLC Utopia"
+                              ],
                               "children": [],
                               "is_event": false,
                               "source": "vanilla"
@@ -4361,8 +4564,8 @@
                               "name": "Sentry Array",
                               "description": "The stages of the Sentry Array gradually expand sensor range, eventually covering the entire galaxy.",
                               "area": "physics",
-                              "base_factor": 0.25,
-                              "base_weight": 5.0,
+                              "base_factor": 2.0,
+                              "base_weight": 40.0,
                               "category": "Computing",
                               "cost": 20000,
                               "feature_unlocks": [
@@ -4393,7 +4596,9 @@
                                 "(×<b style='color:lime'>6.0</b>) Has Enigmatic Engineering Ascension Perk",
                                 "(×<b style='color:lime'>1.5</b>) Has Technological Ascendancy Ascension Perk"
                               ],
-                              "potential": [],
+                              "potential": [
+                                "Has DLC Utopia"
+                              ],
                               "children": [],
                               "is_event": false,
                               "source": "vanilla"
@@ -4403,8 +4608,8 @@
                               "name": "Strategic Coordination Center",
                               "description": "A facility synchronizing the national Starbase network, augmenting defensive and offensive capabilities.",
                               "area": "society",
-                              "base_factor": 0.25,
-                              "base_weight": 5.0,
+                              "base_factor": 2.0,
+                              "base_weight": 40.0,
                               "category": "Military Theory",
                               "cost": 20000,
                               "feature_unlocks": [
@@ -4436,7 +4641,54 @@
                                 "(×<b style='color:lime'>6.0</b>) Has Eternal Vigilance Ascension Perk",
                                 "(×<b style='color:lime'>1.5</b>) Has Technological Ascendancy Ascension Perk"
                               ],
-                              "potential": [],
+                              "potential": [
+                                "Has DLC Megacorp"
+                              ],
+                              "children": [],
+                              "is_event": false,
+                              "source": "vanilla"
+                            },
+                            {
+                              "key": "tech_mega_shipyard",
+                              "name": "Mega Shipyard",
+                              "description": "A zero-G construction yard of overwhelming proportion, capable of performing several space ship assembly projects simultaneously.",
+                              "area": "society",
+                              "base_factor": 2.0,
+                              "base_weight": 40.0,
+                              "category": "Military Theory",
+                              "cost": 20000,
+                              "feature_unlocks": [
+                                "<b>Mega-Structure</b>: Mega Shipyard",
+                                "<b>Mega-Structure</b>: Mega Shipyard Construction Site",
+                                "<b>Mega-Structure</b>: Mega Shipyard Core",
+                                "<b>Mega-Structure</b>: Mega Shipyard Framework"
+                              ],
+                              "is_dangerous": false,
+                              "is_rare": true,
+                              "is_start_tech": false,
+                              "prerequisites": [
+                                "tech_mega_engineering"
+                              ],
+                              "tier": 5,
+                              "prerequisites_names": [
+                                {
+                                  "name": "Mega-Engineering",
+                                  "key": "tech_mega_engineering"
+                                }
+                              ],
+                              "weight_modifiers": [
+                                "(×<b style='color:red'>0.5</b>) One must be true<br/>    •   Has Pacifist Ethic<br/>    •   Has Fanatic Pacifist Ethic",
+                                "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Militarist Ethic<br/>    •   Has Fanatic Militarist Ethic",
+                                "(×<b style='color:lime'>2.0</b>) Research Leader (Society): <br/>    •   Is Maniacal",
+                                "(×<b style='color:lime'>2.0</b>) Research Leader (Society): <br/>    •   Is Spark of Genius",
+                                "(×<b style='color:lime'>2.0</b>) One must be true<br/>    •   Has Galactic Wonders Ascension Perk<br/>    •   Has Galactic Wonders Ascension Perk",
+                                "(×<b style='color:lime'>6.0</b>) Has Master Builders Ascension Perk",
+                                "(×<b style='color:lime'>6.0</b>) Has Galactic Force Projection Ascension Perk",
+                                "(×<b style='color:lime'>1.5</b>) Has Technological Ascendancy Ascension Perk"
+                              ],
+                              "potential": [
+                                "Has DLC Federations"
+                              ],
                               "children": [],
                               "is_event": false,
                               "source": "vanilla"
@@ -4446,8 +4698,8 @@
                               "name": "Interstellar Assembly",
                               "description": "A meeting place for galactic powers, increasing immigration attraction and global opinion of us.",
                               "area": "society",
-                              "base_factor": 0.25,
-                              "base_weight": 5.0,
+                              "base_factor": 2.0,
+                              "base_weight": 40.0,
                               "category": "Statecraft",
                               "cost": 20000,
                               "feature_unlocks": [
@@ -4479,7 +4731,9 @@
                                 "(×<b style='color:lime'>6.0</b>) Has Master Builders Ascension Perk",
                                 "(×<b style='color:lime'>1.5</b>) Has Technological Ascendancy Ascension Perk"
                               ],
-                              "potential": [],
+                              "potential": [
+                                "Has DLC Megacorp"
+                              ],
                               "children": [],
                               "is_event": false,
                               "source": "vanilla"
@@ -4489,8 +4743,8 @@
                               "name": "Mega Art Installation",
                               "description": "An artistic beacon on a stellar scale, this installation inspires and represents the spirit of its creators.",
                               "area": "society",
-                              "base_factor": 0.25,
-                              "base_weight": 5.0,
+                              "base_factor": 2.0,
+                              "base_weight": 40.0,
                               "category": "Statecraft",
                               "cost": 20000,
                               "feature_unlocks": [
@@ -4523,7 +4777,9 @@
                                 "(×<b style='color:lime'>6.0</b>) Has One Vision Ascension Perk",
                                 "(×<b style='color:lime'>1.5</b>) Has Technological Ascendancy Ascension Perk"
                               ],
-                              "potential": [],
+                              "potential": [
+                                "Has DLC Megacorp"
+                              ],
                               "children": [],
                               "is_event": false,
                               "source": "vanilla"
@@ -4562,6 +4818,49 @@
                             "(×<b style='color:lime'>1.25</b>) Research Leader (Engineering): <br/>    •   Is Voidcraft Expert"
                           ],
                           "potential": [],
+                          "children": [],
+                          "is_event": false,
+                          "source": "vanilla"
+                        },
+                        {
+                          "key": "tech_juggernaut",
+                          "name": "Juggernaut",
+                          "description": "A mobile space base of unparalleled proportions, the Juggernaut ship class takes offensive warfare to a whole new level.",
+                          "area": "engineering",
+                          "base_factor": 2.0,
+                          "base_weight": 40.0,
+                          "category": "Voidcraft",
+                          "cost": 20000,
+                          "feature_unlocks": [
+                            "<b>Starbase Building</b>: Colossal Assembly Yards"
+                          ],
+                          "is_dangerous": false,
+                          "is_rare": true,
+                          "is_start_tech": false,
+                          "prerequisites": [
+                            "tech_battleships",
+                            "tech_starbase_5"
+                          ],
+                          "tier": 5,
+                          "prerequisites_names": [
+                            {
+                              "name": "Citadel",
+                              "key": "tech_starbase_5"
+                            },
+                            {
+                              "name": "Battleships",
+                              "key": "tech_battleships"
+                            }
+                          ],
+                          "weight_modifiers": [
+                            "(×<b style='color:lime'>1.5</b>) One must be true<br/>    •   Research Leader (Engineering): <br/>\t    •   Is Voidcraft Expert<br/>    •   Research Leader (Engineering): <br/>\t    •   Is Curator<br/>    •   Research Leader (Engineering): <br/>\t    •   Is Maniacal",
+                            "(×<b style='color:lime'>1.5</b>) Has Technological Ascendancy Ascension Perk",
+                            "(×<b style='color:lime'>1.25</b>) Has Technology: Titans",
+                            "(×<b style='color:lime'>1.25</b>) Research Leader (Engineering): <br/>    •   Is Voidcraft Expert"
+                          ],
+                          "potential": [
+                            "Has DLC Federations"
+                          ],
                           "children": [],
                           "is_event": false,
                           "source": "vanilla"
@@ -4640,8 +4939,8 @@
                           "name": "Advanced Cruiser Hulls",
                           "description": "The latest generation of cruiser hulls have optimized structural integrity fields and improved bulkheads.",
                           "area": "engineering",
-                          "base_factor": 1.0,
-                          "base_weight": 45.0,
+                          "base_factor": 2.0,
+                          "base_weight": 90.0,
                           "category": "Voidcraft",
                           "cost": 8000,
                           "feature_unlocks": [
@@ -4752,8 +5051,8 @@
                   "name": "Advanced Corvette Hulls",
                   "description": "The latest generation of corvette hulls have optimized structural integrity fields and improved bulkheads.",
                   "area": "engineering",
-                  "base_factor": 1.0,
-                  "base_weight": 70.0,
+                  "base_factor": 2.0,
+                  "base_weight": 140.0,
                   "category": "Voidcraft",
                   "cost": 2500,
                   "feature_unlocks": [
@@ -4851,8 +5150,8 @@
           "name": "Nanite Transmutation",
           "description": "The mass-production of these rare resources require particularly capable nanites.",
           "area": "engineering",
-          "base_factor": 0.5,
-          "base_weight": 35.0,
+          "base_factor": 2.0,
+          "base_weight": 140.0,
           "category": "Materials",
           "cost": 2500,
           "feature_unlocks": [
@@ -4985,8 +5284,9 @@
           "category": "Voidcraft",
           "cost": 500,
           "feature_unlocks": [
-            "<b>Army</b>: Assault Army",
-            "<b>Army</b>: Hunter-Killer Army"
+            "<b>Army</b>: Assault Army\nThese armies can be embarked and used for invasion on other planets.",
+            "<b>Army</b>: Hunter-Killer Army",
+            "<b>Army</b>: Undead Army"
           ],
           "is_dangerous": false,
           "is_rare": false,

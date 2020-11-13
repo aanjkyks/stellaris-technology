@@ -279,7 +279,9 @@
       }
     ],
     "weight_modifiers": [],
-    "potential": [],
+    "potential": [
+      "Has DLC Utopia"
+    ],
     "children": [],
     "is_event": true,
     "source": "vanilla"
@@ -337,7 +339,7 @@
     "name": "Extradimensional Weaponry",
     "description": "Applying 5th-dimensional energy manipulation principles on lower dimensional planes allows for the creation of powerful energy weapons.",
     "area": "physics",
-    "base_factor": 10.0,
+    "base_factor": 2.0,
     "base_weight": 0.0,
     "category": "Particles",
     "cost": 20000,
@@ -464,7 +466,9 @@
       }
     ],
     "weight_modifiers": [],
-    "potential": [],
+    "potential": [
+      "Has DLC Megacorp"
+    ],
     "children": [],
     "is_event": true,
     "source": "vanilla"
@@ -709,7 +713,9 @@
       }
     ],
     "weight_modifiers": [],
-    "potential": [],
+    "potential": [
+      "Has DLC Utopia"
+    ],
     "children": [],
     "is_event": true,
     "source": "vanilla"
